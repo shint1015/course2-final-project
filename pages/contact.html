@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common.css">
+    <title>Portfolio - Contact</title>
+    <style>
+        footer {
+            position: absolute;
+            bottom: 0;
+        }
+        main {
+            margin-top: 5rem;
+        }
+
+        header nav > span {
+            display: inline-block;
+            /* Parent width - logo width -menu <ul> width - <span> border - whitespace  */
+            width: calc(100% - 70px - 210px - 2px - 15px);
+        }
+
+        .contact-form-area {
+            color: #111;
+            background: #fff;
+            width: 60%;
+            padding: 1rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #afafaf;
+        }
+
+        form#contact-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+            row-gap: 1rem;
+        }
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+            background: #005fff;
+            box-shadow: 0 0 10px #00a2ff;
+            color: #fff;
+        }
+
+        button[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="pagas">
+            <div><a href="../index.html">Portfolio</a></div>
+            <span></span>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-form-area">
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email"> 
+                </div>
+                <div class="form-group">
+                    <label for="contact-type">Contact Type</label>
+                    <select id="contact-type" name="contact-type">
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group" style="
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                ">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-group" style="
+                    grid-row-start: 4;
+                    grid-column-start: 2;
+                    justify-self: flex-end;
+                ">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class ="separator">
+            <span></span>
+        </div>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: #1E1B2E;
+    color: #E0E0E0;
+}
+a {
+    color: #fff;
+}
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* header style */
+header {
+    padding: 10px;
+    background-color: #050622;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav > div {
+    display: inline-block;
+}
+
+header nav > span {
+    display: inline-block;
+    /* Parent width - logo width -menu <ul> width - <span> border - whitespace  */
+    width: calc(100% - 70px - 410px - 2px - 15px);
+}
+
+
+/* nav menu <ul> */
+header nav ul {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+
+footer nav ul li a:hover, header nav.pagas ul li a:hover {
+    color: rgb(161, 45, 197);
+}
+
+footer nav ul li a:active, header nav.pagas ul li a:active {
+    color: rgb(101, 40, 253);
+}
+
+footer nav ul li a[href="#"], header nav.pagas ul li a[href="#"] {
+    color: rgb(0, 157, 255);
+}
+
+
+
+
+
+/* footer style */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #050622;
+}
+
+footer nav {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+footer nav > a {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+footer nav ul {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer nav ul li:last-child {
+    margin-right: 0;
+}
+
+footer .separator {
+    text-align: center;
+}
+
+footer .separator span {
+    display: inline-block;
+    width: 80%;
+    border-top: 1px solid white;
+    vertical-align: middle;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 10px 0 30px;
+}

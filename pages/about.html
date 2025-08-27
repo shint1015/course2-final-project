@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./about_style.css">
+</head>
+<body>
+    <header>
+        <nav class="pagas">
+            <div><a href="../index.html">Portfolio</a></div>
+            <span></span>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <div class="table-container">
+            <div class="table-wrapper first-table">
+                <h2>Personal Information</h2>
+                <table id="base-info-table">
+                    <caption>Explain Personal Base Information</caption>
+                    <thead>
+                        <tr>
+                            <th id="key" scope="col">Key</th>
+                            <th id="value" scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="full-name" headers="key" scope="row">Full Name</th>
+                            <td headers="value full-name">Shintaro Miyata</td>
+                        </tr>
+                        <tr>
+                            <th id="location" headers="key" scope="row">Location</th>
+                            <td headers="value location">Miyazaki, Japan</td>
+                        </tr>
+                        <tr>
+                            <th id="age" headers="key" scope="row">Age</th>
+                            <td headers="value age">29</td>
+                        </tr>
+                        <tr>
+                            <th id="role" headers="key" scope="row">Role</th>
+                            <td headers="value role">Web Developer / Software Engineer</td>
+                        </tr>
+                        <tr>
+                            <th id="hobby" headers="key" scope="row">Hobby</th>
+                            <td headers="value hobby">Badminton / Game / Movies / Anime</td>
+                        </tr>
+                        <tr>
+                            <th id="language" headers="key" scope="row">Languages</th>
+                            <td headers="value language">Japanese / English</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-wrapper second-table">
+                <h2>Industory Experience</h2>
+                <table id="experience-table">
+                    <caption>Explain Personal Experience</caption>
+                    <thead>
+                        <tr>
+                            <th>Industry</th>
+                            <th>Year of Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="industry">Second Hand</td>
+                            <td headers="experience">2.5 years</td>
+                        </tr>
+                        <tr>
+                            <td headers="industry">Crypto related industry</td>
+                            <td headers="experience">1.5 years</td>
+                        </tr>
+                        <tr>
+                            <td headers="industry">E-commerce</td>
+                            <td headers="experience">3.5 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-wrapper third-table">
+                <h2>Skill and Speciality</h2>
+                <table id="skill-speciality-table">
+                    <caption>Explain Personal Skill Speciality</caption>
+                    <thead>
+                        <tr>
+                            <th id="category" scope="col">Category</th>
+                            <th id="details" scope="col">Details</th>
+                            <th id="level" scope="col">Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="backend" headers="category" scope="rowgroup" rowspan="3">Backend</th>
+                            <td headers="details backend">PHP / Laravel</td>
+                            <td headers="level backend">Advanced</td>
+                        </tr>
+                        <tr>
+                            <td headers="details backend">Go, Echo(Go), Python</td>
+                            <td headers="level backend">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td headers="details backend">Rust</td>
+                            <td headers="level backend">Beginner</td>
+                        </tr>
+                        <tr>
+                            <th id="frontend" headers="category" scope="rowgroup" rowspan="3">Frontend</th>
+                            <td headers="details frontend">TypeScript, JavaScript, HTML &amp; CSS, Node.js</td>
+                            <td headers="level frontend">Advanced</td>
+                        </tr>
+                        <tr>
+                            <td headers="details frontend">React, Vue.js, Next.js</td>
+                            <td headers="level frontend">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td headers="details frontend">Angular, Nuxt.js</td>
+                            <td headers="level frontend">Beginner</td>
+                        </tr>
+                        <tr>
+                            <th id="database" headers="category" scope="rowgroup" rowspan="2">Database</th>
+                            <td headers="details database">MySQL</td>
+                            <td headers="level database">Advanced</td>
+                        </tr>
+                        <tr>
+                            <td headers="details database">PostgreSQL</td>
+                            <td headers="level database">Beginner</td>
+                        </tr>
+                        <tr>
+                            <th id="devops" headers="category" scope="rowgroup" rowspan="2">DevOps</th>
+                            <td headers="details devops">Git</td>
+                            <td headers="level devops">Advanced</td>
+                        </tr>
+                        <tr>
+                            <td headers="details devops">Docker</td>
+                            <td headers="level devops">Intermediate</td>
+                        </tr>
+                        <tr>
+                            <th id="specialization" scope="row">Specialization</th>
+                            <td headers="details specialization">Clean Architecture, Database Design, API Design, Performance &amp; Reliability</td>
+                            <td headers="level specialization">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class ="separator">
+            <span></span>
+        </div>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>
