@@ -28,10 +28,12 @@ header nav > span {
 .table-wrapper table thead tr {
     background: linear-gradient(to right, #7F00FF,#E100FF);
 }
+
 .table-wrapper table tbody tr {
     background: linear-gradient(to right, #7f00ff73, #e100ff7d);
     color: #fdecff;
 }
+
 .table-wrapper table tbody tr:hover {
     opacity: 0.9;
 }
@@ -45,10 +47,13 @@ header nav > span {
     text-align: center;
 }
 
-.table-container{
-    display:grid;
+.table-container {
+    display: grid;
     place-content: center;
     gap: 1rem;
+    padding: 2rem 1rem;
+    width: 75%;
+    margin: auto;
 }
 .first-table {
     grid-column: col / span 2;

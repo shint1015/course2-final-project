@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shintaro Miyata</title>
+    <title>Portfolio - Shintaro Miyata</title>
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        main {
+            font-size: 0px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +27,8 @@
         </nav>
     </header>
     <main>
-        <div class="sidebar-area">
+        <!-- located left side -->
+        <div id="sidebar-area">
             <h1>Shintaro Miyata</h1>
             <p>Web Developer / Software Engineer</p>
             <nav>
@@ -47,20 +53,23 @@
                 </a>
             </div>
         </div>
-        <div class="main-area">
+        <!-- located right side -->
+        <div id="main-area">
             <section class="section-area" id="about">
                 <h2>About Me</h2>
                 <div id="about-content">
                     <div class="myface-container">
                         <img src="./assets/anime-face.png" alt="My Face" />
                     </div>
-                    <p>
+                    <p class="p-overflow">
                         Hi! My name is <strong>Shintaro Miyata</strong>. I am a software engineer with a passion for building scalable, high-performance systems that deliver seamless user experiences. This website is a space for me to showcase my work, experiments, and perspectives in web development.
                         Currently, I am studying in a Web Developer course at Tamwood Career College.
                         <br><br>
                         Since 2019, I have been working on various projects leveraging modern web technologies to create intuitive and efficient user interfaces. My goal is to continuously learn and improve my skills while contributing to meaningful projects.
                         My experience includes developing internal systems for a second-hand goods company, building management platforms for clients in the cryptocurrency industry, and troubleshooting and fixing bugs in e-commerce platforms.
-                        <br><br>
+                    </p>
+                    <p class="p-clear-both">
+                        <br>
                         In my spare time, I enjoy playing badminton, watching movies and anime, and going for walks on sunny days.
                     </p>
                     <a class="read-btn" href="./pages/about.html">Read more about me!</a>
@@ -78,7 +87,7 @@
                         <p>Python<span class="skill-intermediate">Intermediate</span></p>
                     </div>
                     <h3>Frontend</h3>
-                    <div class="skill-list">
+                    <div id="frontend-skillset" class="skill-list">
                         <p>JavaScript<span class="skill-advance">Advanced</span></p>
                         <p>TypeScript<span class="skill-advance">Advanced</span></p>
                         <p>HTML&CSS<span class="skill-advance">Advanced</span></p>

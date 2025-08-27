@@ -40,6 +40,15 @@
             display: grid;
             grid-template-columns: 1fr;
         }
+        .submit-button {
+            grid-row-start: 4;
+            grid-column-start: 2;
+            justify-self: flex-end;
+        }
+        .textarea-group {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 
         .form-group input, .form-group select, .form-group textarea {
             padding: 0.5rem;
@@ -98,18 +107,11 @@
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject">
                 </div>
-                <div class="form-group" style="
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-                ">
+                <div class="form-group textarea-group">
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
-                <div class="form-group" style="
-                    grid-row-start: 4;
-                    grid-column-start: 2;
-                    justify-self: flex-end;
-                ">
+                <div class="form-group submit-button">
                     <button type="submit">Send Message</button>
                 </div>
             </form>

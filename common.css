@@ -4,6 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: monospace;
 }
 body {
     background-color: #1E1B2E;
@@ -44,7 +45,7 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 20px;
 }
 
