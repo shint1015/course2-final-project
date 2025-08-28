@@ -8,6 +8,14 @@ header nav > span {
     width: calc(100% - 70px - 210px - 2px - 15px);
 }
 
+header nav.pagas ul li a:link {
+    color: #00ffb7;
+}
+
+header nav.pagas ul li a:visited {
+    color: #ff6600;
+}
+
 
 .table-wrapper {
     width: 100%;
@@ -33,9 +41,12 @@ header nav > span {
     background: linear-gradient(to right, #7F00FF,#E100FF);
 }
 
-.table-wrapper table tbody tr {
+.table-wrapper table tbody tr > td {
     background: linear-gradient(to right, #7f00ff73, #e100ff7d);
     color: #fdecff;
+}
+.table-wrapper table tbody tr th {
+    background: #7f00ff73;
 }
 
 .table-wrapper table tbody tr:hover {
