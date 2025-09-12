@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Shintaro Miyata</title>
     <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./pc.css">
+    <link rel="stylesheet" href="./mobile.css">
     <style>
         main {
             font-size: 0px;
@@ -28,7 +29,7 @@
     </header>
     <main>
         <!-- located left side -->
-        <div id="sidebar-area">
+        <div id="sidebar-area" class="pc-only">
             <h1>Shintaro Miyata</h1>
             <p>Web Developer / Software Engineer</p>
             <nav>
@@ -55,6 +56,10 @@
         </div>
         <!-- located right side -->
         <div id="main-area">
+            <section class="mobile-only">
+                <h1>Shintaro Miyata</h1>
+                <p>Web Developer / Software Engineer</p>
+            </section>
             <section class="section-area" id="about">
                 <h2>About Me</h2>
                 <div id="about-content">
@@ -80,31 +85,136 @@
                 <div class="skill-lists">
                     <h3>Backend</h3>
                     <div class="skill-list">
-                        <p>PHP<span class="skill-advance">Advanced</span></p>
-                        <p>Laravel<span class="skill-advance">Advanced</span></p>
-                        <p>Go <span class="skill-intermediate">Intermediate</span></p>
-                        <p>Echo(Go)<span class="skill-intermediate">Intermediate</span></p>
-                        <p>Python<span class="skill-intermediate">Intermediate</span></p>
+                        <div class="skill-item">
+                            <div class="skill-name">PHP</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Laravel</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Go</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv6 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Echo(Go)</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv6 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv5 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
                     </div>
                     <h3>Frontend</h3>
                     <div id="frontend-skillset" class="skill-list">
-                        <p>JavaScript<span class="skill-advance">Advanced</span></p>
-                        <p>TypeScript<span class="skill-advance">Advanced</span></p>
-                        <p>HTML&CSS<span class="skill-advance">Advanced</span></p>
-                        <p>Node.js<span class="skill-advance">Advanced</span></p>
-                        <p>React<span class="skill-intermediate">Intermediate</span></p>
-                        <p>Vue.js<span class="skill-intermediate">Intermediate</span></p>
-                        <p>Next.js<span class="skill-intermediate">Intermediate</span></p>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">TypeScript</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML&CSS</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv6 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Vue.js</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv5 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Next.js</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv6 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
                     </div>
                     <h3>Database</h3>
                     <div class="skill-list">
-                        <p>MySQL<span class="skill-advance">Advanced</span></p>
+                        <div class="skill-item">
+                            <div class="skill-name">MySQL</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv7 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
                     </div>
 
                     <h3>Other</h3>
                     <div class="skill-list">
-                        <p>Git<span class="skill-advance">Advanced</span></p>
-                        <p>Docker<span class="skill-intermediate">Intermediate</span></p>
+                        <div class="skill-item">
+                            <div class="skill-name">Git</div>
+                            <span class="pc-only skill-advance">Advanced</span>
+                            <div class="mobile-only bar">
+                                <div class="lv8 barline"></div>
+                            </div>
+                            <span class="tooltip advanced mobile-only">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Docker</div>
+                            <span class="pc-only skill-intermediate">Intermediate</span>
+                            <div class="mobile-only bar">
+                                <div class="lv7 barline"></div>
+                            </div>
+                            <span class="tooltip intermediate mobile-only">Intermediate</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -179,6 +289,7 @@
             <nav>
                 <ul>
                     <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="./pages/faq.html">FAQ</a></li>
                 </ul>
             </nav>
         <div class ="separator">
