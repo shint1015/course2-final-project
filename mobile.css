@@ -1,7 +1,24 @@
 @media screen and (max-width: 767px) {
-    main {
-        padding: 0 2rem;
-    } 
+
+    main #main-area section {
+        padding: 0 2rem 4rem;
+    }
+    .menu-button {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    .hero-section {
+        background-image: url(./assets/hero.png);
+        background-color: rgba(31,27,46, 0.8);
+        background-blend-mode: darken;
+        height: 400px;
+        width: 100%;
+        background-size: 80%;
+        /* background-repeat: no-repeat; */
+        background-position: bottom;
+    }
     .pc-only.pc-only.pc-only {
         display: none;
     }
@@ -37,6 +54,7 @@
         margin-top: 30px;
     }
     .skill-list {
+        padding-bottom: 2rem;
         & .skill-item {
             width: 100%;
             position: relative;
