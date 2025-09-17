@@ -10,7 +10,6 @@
         display: flex;
     }
     #hamburger-menu {
-        display: none;
         width: 50%;
         background: #111;
         position: absolute;

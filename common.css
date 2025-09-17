@@ -84,6 +84,10 @@ footer nav ul li a[href="#"], header nav.pages ul li a[href="#"] {
     color: rgb(0, 157, 255);
 }
 
+#hamburger-menu {
+    display: none;
+}
+
 /* main area style Section 1 */
 .myface-container img {
     width: 150px;
