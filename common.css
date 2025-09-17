@@ -7,6 +7,7 @@
     --active-color: rgb(101, 40, 253);
     --special-link-color: rgb(0, 157, 255);
     --gradient-color: linear-gradient(to right, #7F00FF,#E100FF);
+    --webkit-gradient-color: -webkit-linear-gradient(to right, #7F00FF,#E100FF);
 }
 
 * {
@@ -103,6 +104,7 @@ footer nav ul li a[href="#"], header nav.pages ul li a[href="#"] {
     overflow: scroll;
     scrollbar-color: white white;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .p-clear-both {
@@ -340,4 +342,29 @@ a.portfolio-card {
     100%{
         width: 100%;
     }
+}
+ 
+@keyframes slideIn {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+  40%,100% {
+    opacity: 0;
+  }
 }

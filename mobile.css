@@ -9,6 +9,52 @@
     .mobile-menu {
         display: flex;
     }
+    #hamburger-menu {
+        display: none;
+        width: 50%;
+        background: #111;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #hamburger-menu.slideIn {
+        display: block;
+        opacity: 1;
+        animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    #hamburger-menu.slideOut {
+        /* display: none; */
+        animation: slideOut 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    #hamburger-menu .close-button {
+        background: none;
+        border: none;
+        color: white;
+        display: block;
+        margin: 1rem;
+        margin-left: auto;
+    }
+    #hamburger-menu ul {
+        margin: 2rem 0;
+    }
+    #hamburger-menu ul li {
+        text-align: center;
+        padding: 0.5rem;
+    }
+    #hamburger-menu ul li:hover a {
+        background: linear-gradient(0deg, #7F00FF,#E100FF);
+        background:  -webkit-linear-gradient(90deg, #7F00FF,#E100FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #hamburger-menu ul li a {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 2.5;
+        text-align: right;
+    }
 
     main #main-area section {
         padding: 0 1rem 4rem;
@@ -79,8 +125,6 @@
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
-
 
     .skill-list {
         padding-bottom: 2rem;
