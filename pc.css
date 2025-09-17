@@ -2,8 +2,13 @@
     * {
         font-size: 16px;
     }
+    
     .mobile-only.mobile-only.mobile-only {
         display: none;
+    }
+
+    header nav.pages {
+        display: flex;
     }
     /* sidebar style */
     #sidebar-area, #main-area {
@@ -85,12 +90,15 @@
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+        column-gap: 0.25rem;
+        row-gap: 0.5rem;
     }
     .skill-list .skill-item {
+        font-size: 0.7rem;
         width: 24%;
         display: flex;
+        flex-wrap: wrap;
         background: linear-gradient(to right, #7F00FF,#E100FF);
-        margin: 0.5rem 0.25rem;
         padding: 0.5rem 0.75rem;
         border-radius: 2rem;
         color: #d0d0d0;
@@ -99,8 +107,6 @@
     }
 
     .skill-list div span {
-        padding-left: 0.25rem;
-        margin-left: 0.25rem;
         border-radius: 2rem;
     }
 
@@ -121,6 +127,10 @@
 
     span.skill-intermediate {
         color: #fff200fc;
+    }
+
+    footer .footer-bottom {
+        justify-content: center;
     }
 }
 
