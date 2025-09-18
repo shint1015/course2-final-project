@@ -162,6 +162,10 @@
             }
        }
     }
+    footer .social {
+        gap: 1rem;
+        display: flex;
+    }
 
     .skill-list div:hover .tooltip {
         visibility: visible;
