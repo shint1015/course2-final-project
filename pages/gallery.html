@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="../pc.css">
     <link rel="stylesheet" href="../mobile.css">
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
     <!-- Tailwind CSS (official CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -23,12 +23,10 @@
         <nav class="pages">
             <div class="header-logo">Portfolio</div>
             <ul class="pc-only">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li><a href="./pages/gallery.html">Gallery</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
             </ul>
             <div class="mobile-only mobile-menu">
                 <button id="menu-button" class="menu-button">
@@ -41,9 +39,10 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-                <li><a href="./pages/gallery.html">Gallery</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#">Gallery</a></li>
             </ul>
         </div>
     </header>
@@ -51,41 +50,51 @@
         <section class="mx-6 mt-20">
             <h2 class="text-2xl font-semibold mb-4">Gallery</h2>
             <!-- Responsive grid: 1 column on xs, 2 on sm, 3 on md, 4 on lg+ -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_001.webp" alt="Kororo 1" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_002.webp" alt="Kororo 2" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_003.webp" alt="Kororo 3" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_004.webp" alt="Kororo 4" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_005.webp" alt="Kororo 5" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_006.webp" alt="Kororo 6" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_007.webp" alt="Kororo 7" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_008.webp" alt="Kororo 8" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_009.webp" alt="Kororo 9" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_010.webp" alt="Kororo 10" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_011.webp" alt="Kororo 11" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_012.webp" alt="Kororo 12" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_013.webp" alt="Kororo 13" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_014.webp" alt="Kororo 14" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_015.webp" alt="Kororo 15" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_016.webp" alt="Kororo 16" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_017.webp" alt="Kororo 17" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_018.webp" alt="Kororo 18" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_019.webp" alt="Kororo 19" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_020.webp" alt="Kororo 20" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_021.webp" alt="Kororo 21" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_022.webp" alt="Kororo 22" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_023.webp" alt="Kororo 23" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_024.webp" alt="Kororo 24" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_025.webp" alt="Kororo 25" loading="lazy">
-                <img class="w-full h-48 object-cover rounded-lg shadow" src="../assets/kororo_026.webp" alt="Kororo 26" loading="lazy">
+            <div class="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_001.webp" alt="Kororo 1" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_002.webp" alt="Kororo 2" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_003.webp" alt="Kororo 3" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_004.webp" alt="Kororo 4" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_005.webp" alt="Kororo 5" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_006.webp" alt="Kororo 6" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_007.webp" alt="Kororo 7" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_008.webp" alt="Kororo 8" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_009.webp" alt="Kororo 9" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_010.webp" alt="Kororo 10" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_011.webp" alt="Kororo 11" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_012.webp" alt="Kororo 12" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_013.webp" alt="Kororo 13" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_014.webp" alt="Kororo 14" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_015.webp" alt="Kororo 15" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_016.webp" alt="Kororo 16" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_017.webp" alt="Kororo 17" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_018.webp" alt="Kororo 18" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_019.webp" alt="Kororo 19" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_020.webp" alt="Kororo 20" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_021.webp" alt="Kororo 21" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_022.webp" alt="Kororo 22" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_023.webp" alt="Kororo 23" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_024.webp" alt="Kororo 24" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_025.webp" alt="Kororo 25" loading="lazy">
+                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_026.webp" alt="Kororo 26" loading="lazy">
+            </div>
+
+            <!-- Modal for full-size image -->
+            <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 mt-20 hidden z-50">
+                <div class="relative max-w-[95%] max-h-[95%]">
+                    <button id="modalClose" class="absolute -top-4 -right-4 bg-none shadow-lg" aria-label="Close image">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                    <img id="modalImage" src="" alt="Expanded image" class="max-w-full max-h-[90vh] rounded" />
+                </div>
             </div>
         </section>
     </main>
-        <footer>
+    <footer>
             <nav>
                 <ul>
-                    <li><a href="./pages/contact.html">Contact</a></li>
-                    <li><a href="./pages/faq.html">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
                 </ul>
             </nav>
         <div class ="separator">

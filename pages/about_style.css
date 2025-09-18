@@ -2,12 +2,6 @@ main {
     margin-top: 4rem;
 }
 
-header nav > span {
-    display: inline-block;
-    /* Parent width - logo width -menu <ul> width - <span> border - whitespace  */
-    width: calc(100% - 70px - 210px - 2px - 15px);
-}
-
 header nav.pagas ul li a:link {
     color: #00ffb7;
 }
@@ -15,6 +9,16 @@ header nav.pagas ul li a:link {
 header nav.pagas ul li a:visited {
     color: #ff6600;
 }
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
 
 
 .table-wrapper {
@@ -26,6 +30,7 @@ header nav.pagas ul li a:visited {
     border-collapse: collapse;
     box-shadow: 0px 0px 25px rgba(198, 130, 253, 0.5);
 }
+
 .table-wrapper table th,
 .table-wrapper table td {
     padding: 12px 15px;
@@ -70,15 +75,37 @@ header nav.pagas ul li a:visited {
     width: 75%;
     margin: auto;
 }
-.first-table {
-    grid-column: col / span 2;
-    grid-row: row ;
+
+@media screen and (min-width: 768px) {
+    .first-table {
+        grid-column: col / span 2;
+        grid-row: row ;
+    }
+    .second-table {
+        grid-column: col 3 / span 2;
+        grid-row: row ;
+    }
+    .third-table {
+        grid-column: col / span 4;
+        grid-row: row 2;
+    }
 }
-.second-table {
-    grid-column: col 3 / span 2;
-    grid-row: row ;
-}
-.third-table {
-    grid-column: col / span 4;
-    grid-row: row 2;
+
+@media screen and (max-width: 767px) {
+    .first-table {
+        grid-column: col / span 2;
+        grid-row: row 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .second-table {
+        grid-column: col / span 2;
+        grid-row: row 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .third-table {
+        grid-column: col / span 2;
+        grid-row: row 3;
+    }
 }
