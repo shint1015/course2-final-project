@@ -50,33 +50,39 @@
         <section class="mx-6 mt-20">
             <h2 class="text-2xl font-semibold mb-4">Gallery</h2>
             <!-- Responsive grid: 1 column on xs, 2 on sm, 3 on md, 4 on lg+ -->
-            <div class="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_001.webp" alt="Kororo 1" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_002.webp" alt="Kororo 2" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_003.webp" alt="Kororo 3" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_004.webp" alt="Kororo 4" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_005.webp" alt="Kororo 5" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_006.webp" alt="Kororo 6" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_007.webp" alt="Kororo 7" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_008.webp" alt="Kororo 8" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_009.webp" alt="Kororo 9" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_010.webp" alt="Kororo 10" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_011.webp" alt="Kororo 11" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_012.webp" alt="Kororo 12" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_013.webp" alt="Kororo 13" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_014.webp" alt="Kororo 14" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_015.webp" alt="Kororo 15" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_016.webp" alt="Kororo 16" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_017.webp" alt="Kororo 17" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_018.webp" alt="Kororo 18" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_019.webp" alt="Kororo 19" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_020.webp" alt="Kororo 20" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_021.webp" alt="Kororo 21" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_022.webp" alt="Kororo 22" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_023.webp" alt="Kororo 23" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_024.webp" alt="Kororo 24" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_025.webp" alt="Kororo 25" loading="lazy">
-                <img class="gallery-item w-full h-48 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_026.webp" alt="Kororo 26" loading="lazy">
+            <div class="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../assets/kororo_001-resize.webp">
+                    <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_001.webp" alt="Kororo 1" loading="lazy">
+                </picture>
+                <picture>
+                    <source media="(max-width: 767px)" srcset="../assets/kororo_002-resize.webp">
+                    <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_002.webp" alt="Kororo 2" loading="lazy">
+                </picture>
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_003.webp" alt="Kororo 3" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_004.webp" alt="Kororo 4" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_005.webp" alt="Kororo 5" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_006.webp" alt="Kororo 6" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_007.webp" alt="Kororo 7" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_008.webp" alt="Kororo 8" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_009.webp" alt="Kororo 9" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_010.webp" alt="Kororo 10" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_011.webp" alt="Kororo 11" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_012.webp" alt="Kororo 12" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_013.webp" alt="Kororo 13" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_014.webp" alt="Kororo 14" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_015.webp" alt="Kororo 15" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_016.webp" alt="Kororo 16" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_017.webp" alt="Kororo 17" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_018.webp" alt="Kororo 18" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_019.webp" alt="Kororo 19" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_020.webp" alt="Kororo 20" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_021.webp" alt="Kororo 21" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_022.webp" alt="Kororo 22" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_023.webp" alt="Kororo 23" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_024.webp" alt="Kororo 24" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_025.webp" alt="Kororo 25" loading="lazy">
+                <img class="gallery-item w-full md:h-48 h-80 object-cover rounded-lg shadow transform transition-transform duration-300 hover:scale-105 cursor-zoom-in" src="../assets/kororo_026.webp" alt="Kororo 26" loading="lazy">
             </div>
 
             <!-- Modal for full-size image -->

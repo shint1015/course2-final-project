@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px) {
+    *{
+        font-size: 14px;
+    }
     .pc-only.pc-only.pc-only {
         display: none;
     }

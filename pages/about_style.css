@@ -2,11 +2,11 @@ main {
     margin-top: 4rem;
 }
 
-header nav.pagas ul li a:link {
+header nav.pages ul li a:link {
     color: #00ffb7;
 }
 
-header nav.pagas ul li a:visited {
+header nav.pages ul li a:visited {
     color: #ff6600;
 }
 h1 {
