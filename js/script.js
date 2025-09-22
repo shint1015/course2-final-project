@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.add("slideIn");
         menu.style.display = "block";
     });
+    
     document.querySelector("#hamburger-menu .close-button").addEventListener("click", () => {
         const menu = document.getElementById("hamburger-menu");
         menu.classList.remove("slideIn");
