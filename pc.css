@@ -51,17 +51,6 @@
         color: #fff;
     }
 
-    .p-overflow {
-        height: 150px;
-        overflow: scroll;
-        scrollbar-color: white white;
-        overflow-y: scroll;
-    }
-
-    .p-clear-both {
-        clear: both;
-    }
-
     .read-btn {
         background-image: radial-gradient(circle, #af00ff, #a000ff, #8f00ff, #7c00ff, #6600ff);
         float: right;

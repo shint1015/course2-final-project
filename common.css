@@ -77,15 +77,15 @@ header nav ul li:last-child {
 }
 
 
-footer nav ul li a:hover, header nav.pages ul li a:hover {
+footer nav ul li a:hover, header nav.pages.pages ul li a:hover {
     color: rgb(161, 45, 197);
 }
 
-footer nav ul li a:active, header nav.pages ul li a:active {
+footer nav ul li a:active, header nav.pages.pages ul li a:active {
     color: rgb(101, 40, 253);
 }
 
-footer nav ul li a[href="#"], header nav.pages ul li a[href="#"] {
+footer nav ul li a[href="#"], header nav.pages.pages ul li a[href="#"] {
     color: rgb(0, 157, 255);
 }
 
