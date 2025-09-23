@@ -92,6 +92,9 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+    .table-container {
+        gap: initial;
+    }
     .first-table {
         grid-column: col / span 2;
         grid-row: row 1;
