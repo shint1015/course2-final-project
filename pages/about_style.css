@@ -38,9 +38,7 @@ h2 {
 
 .table-wrapper table th,
 .table-wrapper table td {
-    padding: 12px 5px;
     border: 1px solid #ccc;
-    font-size: 0.8rem;
     text-align: center;
 }
 
